@@ -1,0 +1,213 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Light background */
+    color: #333; /* Dark text for contrast */
+}
+
+h1, h2, h3 {
+    color: #444; /* Heading color */
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+}
+
+/* Header Section */
+header {
+    background-color: #3a4ca8; /* Blue header */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Navigation Menu */
+nav.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #555;
+}
+
+nav.menu ul li {
+    margin: 0 15px;
+}
+
+nav.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+nav.menu ul li a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+/* Main Content */
+main.content {
+    max-width: 900px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+main.content section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #3a4ca8;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #555;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Additional Styles for Biodata Page */
+.biodata h3 {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #555;
+}
+
+.biodata table {
+    margin-bottom: 30px;
+}
+
+.biodata td {
+    padding: 8px 10px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    nav.menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav.menu ul li {
+        margin: 5px 0;
+    }
+
+    main.content {
+        padding: 15px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
+/* Contact Me Button */
+.contact-btn {
+    background-color: #3a4ca8; /* Blue color */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #283593; /* Darker blue on hover */
+}
+
+/* Modal (Popup) Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position */
+    z-index: 1000; /* On top of other elements */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.5); /* Black with opacity */
+    overflow: auto; /* Enable scrolling if content overflows */
+}
+
+.modal-content {
+    background-color: #fff; /* White background */
+    margin: 15% auto; /* Center the modal */
+    padding: 20px;
+    border-radius: 8px;
+    width: 40%; /* Width of the modal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+    text-align: center;
+}
+
+.modal-content h2 {
+    color: #3a4ca8; /* Blue heading */
+    margin-bottom: 10px;
+}
+
+.modal-content p {
+    font-size: 16px;
+    color: #555; /* Gray text */
+}
+
+.close-btn {
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    color: #aaa; /* Gray close button */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+    color: red; /* Red on hover */
+}
